@@ -23,7 +23,7 @@ class DrumMachine extends React.Component {
       <article className={styles.article}>
         <h2 id="display">Last Sound Played: {this.state.description}</h2>
 
-        <ul>
+        <ul className={styles.keypad}>
           {this.audioItems}
         </ul>
       </article>

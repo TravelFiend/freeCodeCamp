@@ -4,6 +4,7 @@ import RandomQuotes from './components/randomQuotes/RandomQuotes';
 import Header from './components/header/Header';
 import DrumMachine from './components/drumMachine/DrumMachine';
 import Home from './components/home/Home';
+import MKDNPreviewer from './components/mkdnPreviewer/MKDNPreviewer';
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/quotes" component={RandomQuotes} />
       <Route exact path="/beats" component={DrumMachine} />
+      <Route exact path="/mkdn" component={MKDNPreviewer} />
     </Switch>
   </Router>
 );
