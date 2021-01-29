@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap');
 
 article {
-  height: 100vh;
+  height: calc(100vh - 81px);
   font-family: Montserrat;
   display: flex;
   justify-content: center;

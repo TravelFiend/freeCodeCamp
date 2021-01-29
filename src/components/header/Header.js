@@ -1,14 +1,18 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './Header.css';
 
 const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div>FCC Projects</div>
+      <Link to='/'>
+        <div>FCC Projects</div>
+      </Link>
 
       <nav>
+        <Link to='/quotes'>Random Quotes</Link>
+        <Link to='/beats'>Drum Machine</Link>
       </nav>
     </header>
   );

@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
 
 .header {
-  width: 100%;
+  width: inherit;
   background: #1d6b51;
-  border-bottom: 1px solid #0a3b2b;
+  border-bottom: 2px solid #0a3b2b;
   color: #FBFAF8;
   padding: 20px;
   font-family: Mako;
   font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #FBFAF8;
+
+    a:hover {
+      color: #0A122A;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #FBFAF8;
+  margin: 0 20px;
 }
