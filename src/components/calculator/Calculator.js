@@ -1,6 +1,7 @@
 import React from 'react';
 import NumPad from './NumPad';
 import Operators from './Operators';
+import styles from './Calculator.css';
 
 
 class Calculator extends React.Component {
@@ -43,16 +44,18 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <article>
-        <section id='top'>
-          <div id='display'>{this.state.entry}</div>
-          <div id='clear' onClick={() => this.setState({ entry: 0 })}>C</div>
-        </section>
+      <article className={styles.article}>
+        <div>
+          <section id='top' className={styles.top}>
+            <div id='display'>{this.state.entry}</div>
+            <div id='clear' onClick={() => this.setState({ entry: 0 })}>C</div>
+          </section>
 
-        <section id='buttons'>
-          <NumPad handleClick={this.handleClick} />
-          <Operators handleClick={this.handleClick} />
-        </section>
+          <section id='buttons' className={styles.buttons}>
+            <NumPad handleClick={this.handleClick} />
+            <Operators handleClick={this.handleClick} />
+          </section>
+        </div>
       </article>
     );
   }

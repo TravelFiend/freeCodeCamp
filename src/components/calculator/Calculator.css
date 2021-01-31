@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+.article {
+  background: #232323;
+  font-family: Kufam;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  div {
+    background: #e76f51;
+    width: 400px;
+    box-shadow: 3px 3px 3px #264653;
+    color: #264653;
+    padding: 1px 10px;
+    border-radius: 10px;
+    margin-bottom: 15%;
+  }
+  
+  .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    div:first-child, div:last-child {
+      border-radius: 10px;
+      height: 30px;
+    }
+    
+    div:first-child {
+      background: #f8edeb;
+      width: 66%;
+      margin: 20px 0 10px 0;
+      padding: 15px;
+    }
+    
+    div:last-child {
+      background: #f4a261;
+      width: 17%;
+      margin: 20px 0 10px 0;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 1px #264653;
+      cursor: pointer;
+    }
+  }
+  
+  .buttons {
+    margin: 0;
+    display: flex;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      height: 300px;
+      padding: 0;
+
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 23%;
+        box-shadow: 2px 2px 1px #264653;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+
+    ul:first-child {
+      justify-content: space-between;
+      width: 75%;
+
+      li {
+        width: 32%;
+      }
+    }
+
+    ul:last-child {
+      width: 25%;
+      padding-left: 3%;
+
+      li {
+        width: 96%;
+        background: #2a9d8f;
+      }
+    }
+  }
+}
