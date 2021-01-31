@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Clock.css';
 
 
 class TimeChangers extends React.Component {
   constructor(props) {
     super(props);
-  }
+  }z
 
   render() {
     const { breakOrWork, topText, setTime, time } = this.props;
-    
+
     return (
-      <section>
+      <section className={styles.timer}>
         <h3 id={`${breakOrWork}-label`}>{topText}</h3>
-        <div className='info'>
-          <button className='buttons' onClick={setTime} id={`${breakOrWork}-decrement`} value='down'>DOWN</button>
+        <div>
+          <button onClick={setTime} id={`${breakOrWork}-decrement`} value='down'>DOWN</button>
           <p id={`${breakOrWork}-length`}>{time}</p>
-          <button className='buttons' onClick={setTime} id={`${breakOrWork}-increment`} value='up'>UP</button>
+          <button onClick={setTime} id={`${breakOrWork}-increment`} value='up'>UP</button>
         </div>
       </section>
     );

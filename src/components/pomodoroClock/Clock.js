@@ -1,6 +1,7 @@
 import React from 'react';
 import TimeChangers from './TimeChangers';
 import Timer from './Timer';
+import styles from './Clock.css';
 
 
 class Clock extends React.Component {
@@ -93,31 +94,33 @@ class Clock extends React.Component {
 
   render() {
     return (
-      <article id='container'>
-        <h1>POMODORO</h1>
-        <div id='top'>
-          <TimeChangers time={this.state.breakTime}
-            setTime={this.setBreakTime}
-            breakOrWork='break'
-            topText='Break Minutes'
+      <div className={styles.container}>
+        <article id='container'>
+          <h1>POMODORO</h1>
+          <div id='top'>
+            <TimeChangers time={this.state.breakTime}
+              setTime={this.setBreakTime}
+              breakOrWork='break'
+              topText='Break Minutes'
+            />
+            <TimeChangers time={this.state.workTime}
+              setTime={this.setWorkTime}
+              breakOrWork='session'
+              topText='Work Minutes'
+            />
+          </div>
+          <Timer time={this.makeItTime()}
+            handleReset={this.handleReset}
+            breakOrWork={this.state.breakOrWork}
+            handlePlayPause={this.handlePlayPause}
           />
-          <TimeChangers time={this.state.workTime}
-            setTime={this.setWorkTime}
-            breakOrWork='session'
-            topText='Work Minutes'
-          />
-        </div>
-        <Timer time={this.makeItTime()}
-          handleReset={this.handleReset}
-          breakOrWork={this.state.breakOrWork}
-          handlePlayPause={this.handlePlayPause}
-        />
-        <audio src='https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'
-          className='clip'
-          id='beep'
-          ref={sound => this.sound = sound}
-        ></audio>
-      </article>
+          <audio src='https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'
+            className='clip'
+            id='beep'
+            ref={sound => this.sound = sound}
+          ></audio>
+        </article>
+      </div>
     );
   }
 }
