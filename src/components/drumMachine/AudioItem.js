@@ -6,8 +6,8 @@ class AudioItem extends React.Component {
   constructor(props) {
     super(props);
 
-    this.clickity - this.clickity.bind(this);
-    this.pressity - this.pressity.bind(this);
+    this.clickity = this.clickity.bind(this);
+    this.pressity = this.pressity.bind(this);
   }
 
   componentDidMount() {

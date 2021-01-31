@@ -20,7 +20,7 @@ class DrumMachine extends React.Component {
 
   render() {
     return (
-      <article className={styles.article}>
+      <article id='drum-machine' className={styles.article}>
         <h2 id="display">Last Sound Played: {this.state.description}</h2>
 
         <ul className={styles.keypad}>
