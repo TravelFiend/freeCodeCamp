@@ -9,6 +9,7 @@ class TimeChangers extends React.Component {
 
   render() {
     const { breakOrWork, topText, setTime, time } = this.props;
+    
     return (
       <section>
         <h3 id={`${breakOrWork}-label`}>{topText}</h3>
