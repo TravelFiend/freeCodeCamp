@@ -14,6 +14,7 @@ const Header = () => {
         <Link to='/quotes'>Random Quotes</Link>
         <Link to='/beats'>Drum Machine</Link>
         <Link to='/mkdn'>Markdown Previewer</Link>
+        <Link to='/calc'>Calculator</Link>
       </nav>
     </header>
   );
