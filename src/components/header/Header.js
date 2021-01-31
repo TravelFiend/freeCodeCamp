@@ -15,6 +15,7 @@ const Header = () => {
         <Link to='/beats'>Drum Machine</Link>
         <Link to='/mkdn'>Markdown Previewer</Link>
         <Link to='/calc'>Calculator</Link>
+        <Link to='/clock'>Pomodoro</Link>
       </nav>
     </header>
   );

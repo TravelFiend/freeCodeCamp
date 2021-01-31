@@ -6,6 +6,7 @@ import DrumMachine from './components/drumMachine/DrumMachine';
 import Home from './components/home/Home';
 import MKDNPreviewer from './components/mkdnPreviewer/MKDNPreviewer';
 import Calculator from './components/calculator/Calculator';
+import Clock from './components/pomodoroClock/Clock';
 
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
       <Route exact path="/beats" component={DrumMachine} />
       <Route exact path="/mkdn" component={MKDNPreviewer} />
       <Route exact path="/calc" component={Calculator} />
+      <Route exact path="/clock" component={Clock} />
     </Switch>
   </Router>
 );
